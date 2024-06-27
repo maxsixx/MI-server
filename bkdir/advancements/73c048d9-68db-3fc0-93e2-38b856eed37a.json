@@ -777,6 +777,12 @@
     },
     "done": true
   },
+  "deeperdarker:recipes/deeperdarker/echo_boat": {
+    "criteria": {
+      "in_water": "2024-06-27 02:17:52 +0000"
+    },
+    "done": true
+  },
   "vampirism:main/ancient_knowledge": {
     "criteria": {
       "blood_container": "2024-06-25 03:30:00 +0000"
@@ -1384,6 +1390,12 @@
     },
     "done": true
   },
+  "evilcraft:root": {
+    "criteria": {
+      "criteria_0": "2024-06-27 02:15:39 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/lapis_block": {
     "criteria": {
       "has_lapis_lazuli": "2024-06-25 04:04:52 +0000"
@@ -1753,6 +1765,12 @@
   "minecraft:recipes/misc/firework_rocket_simple": {
     "criteria": {
       "has_gunpowder": "2024-06-25 03:24:11 +0000"
+    },
+    "done": true
+  },
+  "midnight_madness:a_faceless_horror": {
+    "criteria": {
+      "a_faceless_horror": "2024-06-27 02:17:45 +0000"
     },
     "done": true
   },

@@ -61,7 +61,7 @@
 
 	[server.internal]
 		#Send message about Guide-API once
-		infoAboutGuideAPI = true
+		infoAboutGuideAPI = false
 		#If world was generated using the old vampirism biome
 		oldVampireBiomeGen = true
 

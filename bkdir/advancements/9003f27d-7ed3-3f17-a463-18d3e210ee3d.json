@@ -59,6 +59,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/lime_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/iron_pickaxe": {
     "criteria": {
       "has_iron_ingot": "2024-06-25 02:45:28 +0000"
@@ -68,6 +74,12 @@
   "minecraft:recipes/redstone/spruce_fence_gate": {
     "criteria": {
       "has_planks": "2024-06-25 02:36:38 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/yellow_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
     },
     "done": true
   },
@@ -140,6 +152,12 @@
   "minecraft:recipes/redstone/spruce_button": {
     "criteria": {
       "has_planks": "2024-06-25 02:36:38 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_sandstone": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:41:21 +0000"
     },
     "done": true
   },
@@ -257,6 +275,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/coarse_dirt": {
+    "criteria": {
+      "has_gravel": "2024-06-27 02:50:32 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting": {
     "criteria": {
       "has_mossy_cobblestone": "2024-06-25 02:38:29 +0000"
@@ -282,6 +306,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/light_gray_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
+    },
+    "done": true
+  },
   "aquaculture:recipes/aquaculture/worm_farm": {
     "criteria": {
       "has_items": "2024-06-25 02:30:44 +0000"
@@ -297,6 +327,12 @@
   "minecraft:recipes/combat/leather_leggings": {
     "criteria": {
       "has_leather": "2024-06-25 02:59:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/pink_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
     },
     "done": true
   },
@@ -327,6 +363,12 @@
   "grimoireofgaia:recipes/grimoireofgaia/quill": {
     "criteria": {
       "has_diamond": "2024-06-25 02:34:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/magenta_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
     },
     "done": true
   },
@@ -378,6 +420,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2024-06-27 02:44:58 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/diamond_leggings": {
     "criteria": {
       "has_diamond": "2024-06-25 02:34:42 +0000"
@@ -387,6 +435,12 @@
   "minecraft:adventure/sleep_in_bed": {
     "criteria": {
       "slept_in_bed": "2024-06-25 02:38:47 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
     },
     "done": true
   },
@@ -480,6 +534,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/gray_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/white_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/white_wool_from_string": {
     "criteria": {
       "has_string": "2024-06-25 03:23:47 +0000"
@@ -491,6 +557,13 @@
       "has_diamond": "2024-06-25 02:34:42 +0000"
     },
     "done": true
+  },
+  "endofherobrine:story/exorcist": {
+    "criteria": {
+      "endofherobrine:sheep": "2024-06-27 02:59:29 +0000",
+      "endofherobrine:pigman": "2024-06-27 03:02:07 +0000"
+    },
+    "done": false
   },
   "minecraft:recipes/redstone/lightning_rod": {
     "criteria": {
@@ -508,6 +581,12 @@
       "minecraft:zombie": "2024-06-25 03:32:28 +0000"
     },
     "done": false
+  },
+  "minecraft:recipes/building_blocks/birch_wood": {
+    "criteria": {
+      "has_log": "2024-06-27 02:36:54 +0000"
+    },
+    "done": true
   },
   "vampirism:recipes/vampirism/hunter/item_med_chair": {
     "criteria": {
@@ -542,6 +621,12 @@
   "smallships:recipes/transportation/spruce_brigg": {
     "criteria": {
       "in_water": "2024-06-25 02:42:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/pink_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
     },
     "done": true
   },
@@ -647,6 +732,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/orange_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop": {
+    "criteria": {
+      "has_porkchop": "2024-06-27 03:02:14 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_slab": {
     "criteria": {
       "has_planks": "2024-06-25 02:47:01 +0000"
@@ -662,6 +759,12 @@
   "minecraft:recipes/building_blocks/raw_copper_block": {
     "criteria": {
       "has_raw_copper": "2024-06-25 02:37:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
+    "criteria": {
+      "has_porkchop": "2024-06-27 03:02:14 +0000"
     },
     "done": true
   },
@@ -779,9 +882,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2024-06-27 02:36:28 +0000"
+    },
+    "done": true
+  },
   "dungeons_arise:find_lighthouse": {
     "criteria": {
       "location0": "2024-06-25 02:43:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/gray_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
     },
     "done": true
   },
@@ -881,6 +996,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/birch_planks": {
+    "criteria": {
+      "has_logs": "2024-06-27 02:36:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/black_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
+    },
+    "done": true
+  },
   "mca:recipes/misc/bouquet": {
     "criteria": {
       "has_item": "2024-06-25 03:35:45 +0000"
@@ -929,6 +1056,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_porkchop_from_smoking": {
+    "criteria": {
+      "has_porkchop": "2024-06-27 03:02:14 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/oak_trapdoor": {
     "criteria": {
       "has_planks": "2024-06-25 02:47:01 +0000"
@@ -944,6 +1077,18 @@
   "vampirism:recipes/vampirism/weapontable/crossbow_arrow_spitfire": {
     "criteria": {
       "has_crossbow_arrow_normal": "2024-06-25 03:52:32 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_blue_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
     },
     "done": true
   },
@@ -1049,17 +1194,30 @@
       "minecraft:old_growth_pine_taiga": "2024-06-25 02:34:04 +0000",
       "minecraft:taiga": "2024-06-25 02:42:50 +0000",
       "minecraft:frozen_river": "2024-06-25 03:02:28 +0000",
+      "minecraft:birch_forest": "2024-06-27 02:52:47 +0000",
       "minecraft:beach": "2024-06-25 02:42:58 +0000",
+      "minecraft:dark_forest": "2024-06-27 02:48:36 +0000",
       "minecraft:river": "2024-06-25 02:46:08 +0000",
       "minecraft:snowy_plains": "2024-06-25 03:03:30 +0000",
       "minecraft:snowy_taiga": "2024-06-25 03:01:02 +0000",
       "minecraft:cold_ocean": "2024-06-25 02:43:31 +0000",
       "minecraft:forest": "2024-06-25 02:30:45 +0000",
+      "minecraft:lush_caves": "2024-06-27 02:45:25 +0000",
       "minecraft:deep_cold_ocean": "2024-06-25 02:55:47 +0000",
+      "minecraft:frozen_ocean": "2024-06-27 02:33:19 +0000",
+      "minecraft:ocean": "2024-06-27 02:52:12 +0000",
+      "minecraft:old_growth_spruce_taiga": "2024-06-27 02:45:51 +0000",
       "minecraft:snowy_beach": "2024-06-25 03:02:33 +0000",
+      "minecraft:meadow": "2024-06-27 03:00:21 +0000",
       "minecraft:plains": "2024-06-25 03:06:16 +0000"
     },
     "done": false
+  },
+  "minecraft:recipes/decorations/purple_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
+    },
+    "done": true
   },
   "smallships:recipes/transportation/dark_oak_drakkar": {
     "criteria": {
@@ -1170,6 +1328,12 @@
     },
     "done": true
   },
+  "vampirism:recipes/vampirism/alchemy_table/plant_oil": {
+    "criteria": {
+      "has_wheat_seeds": "2024-06-27 03:02:00 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/diamond_block": {
     "criteria": {
       "has_diamond": "2024-06-25 02:34:42 +0000"
@@ -1242,6 +1406,12 @@
     },
     "done": true
   },
+  "securitycraft:recipes/securitycraft/reinforced_packed_mud": {
+    "criteria": {
+      "has_wheat": "2024-06-27 02:49:44 +0000"
+    },
+    "done": true
+  },
   "aquaculture:recipes/decorations/birch_fish_mount": {
     "criteria": {
       "has_items": "2024-06-25 02:30:44 +0000"
@@ -1263,6 +1433,12 @@
   "minecraft:recipes/food/cooked_chicken": {
     "criteria": {
       "has_chicken": "2024-06-25 02:58:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/red_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
     },
     "done": true
   },
@@ -1320,6 +1496,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/magenta_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
+    },
+    "done": true
+  },
   "aquaculture:recipes/aquaculture/note_hook": {
     "criteria": {
       "has_items": "2024-06-25 02:30:44 +0000"
@@ -1374,9 +1556,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/bread": {
+    "criteria": {
+      "has_wheat": "2024-06-27 02:49:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/iron_nugget": {
     "criteria": {
       "has_iron_ingot": "2024-06-25 02:45:28 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brown_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
     },
     "done": true
   },
@@ -1500,7 +1700,9 @@
       "sweet_berries": "2024-06-25 03:43:22 +0000",
       "beef": "2024-06-25 03:43:14 +0000",
       "baked_potato": "2024-06-27 02:26:00 +0000",
-      "bread": "2024-06-25 02:40:06 +0000"
+      "apple": "2024-06-27 02:40:22 +0000",
+      "bread": "2024-06-25 02:40:06 +0000",
+      "carrot": "2024-06-27 02:49:03 +0000"
     },
     "done": false
   },
@@ -1513,6 +1715,12 @@
   "tombstone:recipes/from_grave_key": {
     "criteria": {
       "has_ingredient": "2024-06-25 03:05:27 +0000"
+    },
+    "done": true
+  },
+  "vampirism:recipes/vampirism/hunter/crossbow_arrow_from_vanilla": {
+    "criteria": {
+      "has_arrow": "2024-06-27 02:58:27 +0000"
     },
     "done": true
   },
@@ -1570,6 +1778,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/yellow_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
+    },
+    "done": true
+  },
   "aquaculture:recipes/tools/diamond_fillet_knife": {
     "criteria": {
       "has_items": "2024-06-25 02:34:42 +0000"
@@ -1606,6 +1820,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/light_blue_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
+    },
+    "done": true
+  },
   "aquaculture:recipes/food/cooked_fish_fillet_from_smoking": {
     "criteria": {
       "has_items": "2024-06-25 02:30:44 +0000"
@@ -1627,6 +1847,18 @@
   "minecraft:recipes/misc/leather_horse_armor": {
     "criteria": {
       "has_leather": "2024-06-25 02:59:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/hay_block": {
+    "criteria": {
+      "has_wheat": "2024-06-27 02:49:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/glass": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:41:21 +0000"
     },
     "done": true
   },
@@ -1666,9 +1898,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/purple_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
+    },
+    "done": true
+  },
   "aquaculture:recipes/misc/neptunium_ingot_from_neptunium_block": {
     "criteria": {
       "has_items": "2024-06-25 02:30:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/orange_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
     },
     "done": true
   },
@@ -1792,6 +2036,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/green_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/iron_shovel": {
     "criteria": {
       "has_iron_ingot": "2024-06-25 02:45:28 +0000"
@@ -1816,6 +2066,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/cyan_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
+    },
+    "done": true
+  },
   "justhammers:recipes/justhammers.justhammers_tab/gold_hammer": {
     "criteria": {
       "has_material": "2024-06-25 03:25:24 +0000"
@@ -1825,6 +2081,12 @@
   "minecraft:recipes/decorations/item_frame": {
     "criteria": {
       "has_leather": "2024-06-25 02:59:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/lime_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
     },
     "done": true
   },
@@ -1880,6 +2142,12 @@
   "aquaculture:recipes/building_blocks/planks_from_driftwood": {
     "criteria": {
       "has_items": "2024-06-25 02:30:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/green_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
     },
     "done": true
   },
@@ -1987,6 +2255,18 @@
   "vampirism:recipes/vampirism/vampire/vampire_clothing_legs": {
     "criteria": {
       "has_wool": "2024-06-25 03:43:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blue_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cyan_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
     },
     "done": true
   },
@@ -2176,6 +2456,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/blue_concrete_powder": {
+    "criteria": {
+      "has_sand": "2024-06-27 02:47:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/mossy_cobblestone_slab": {
     "criteria": {
       "has_mossy_cobblestone": "2024-06-25 02:38:29 +0000"
@@ -2251,6 +2537,12 @@
   "vampirism:recipes/vampirism/vampire/coffin_gray": {
     "criteria": {
       "has_wool": "2024-06-25 03:43:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2024-06-27 02:36:28 +0000"
     },
     "done": true
   },
@@ -2447,6 +2739,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/carrot_on_a_stick": {
+    "criteria": {
+      "has_carrot": "2024-06-27 02:47:09 +0000"
+    },
+    "done": true
+  },
   "justhammers:recipes/justhammers.justhammers_tab/gold_reinforced_impact_hammer": {
     "criteria": {
       "has_material": "2024-06-25 03:47:12 +0000"
@@ -2456,6 +2754,12 @@
   "vampirism:recipes/vampirism/hunter/crucifix": {
     "criteria": {
       "stick": "2024-06-25 02:34:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brown_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
     },
     "done": true
   },
@@ -2552,6 +2856,12 @@
   "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
     "criteria": {
       "has_mossy_cobblestone": "2024-06-25 02:38:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_gray_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2024-06-27 02:30:04 +0000"
     },
     "done": true
   },

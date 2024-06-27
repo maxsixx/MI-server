@@ -95,6 +95,12 @@
     },
     "done": true
   },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/gold_backpack": {
+    "criteria": {
+      "has_iron_backpack": "2024-06-27 02:27:12 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/ladder": {
     "criteria": {
       "has_stick": "2024-06-25 02:34:44 +0000"
@@ -881,6 +887,12 @@
     },
     "done": true
   },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2024-06-27 02:28:25 +0000"
+    },
+    "done": true
+  },
   "bossominium:loot_bosses_a": {
     "criteria": {
       "loot_bosses_a": "2024-06-25 02:30:45 +0000"
@@ -1118,6 +1130,12 @@
   "minecraft:recipes/combat/leather_boots": {
     "criteria": {
       "has_leather": "2024-06-25 02:59:25 +0000"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/diamond_backpack": {
+    "criteria": {
+      "has_gold_backpack": "2024-06-27 02:27:26 +0000"
     },
     "done": true
   },
@@ -1481,6 +1499,7 @@
       "chicken": "2024-06-25 03:43:09 +0000",
       "sweet_berries": "2024-06-25 03:43:22 +0000",
       "beef": "2024-06-25 03:43:14 +0000",
+      "baked_potato": "2024-06-27 02:26:00 +0000",
       "bread": "2024-06-25 02:40:06 +0000"
     },
     "done": false
@@ -1891,6 +1910,12 @@
   "smallships:recipes/transportation/jungle_brigg": {
     "criteria": {
       "in_water": "2024-06-25 02:42:08 +0000"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/iron_backpack_from_copper": {
+    "criteria": {
+      "has_copper_backpack": "2024-06-27 02:27:00 +0000"
     },
     "done": true
   },

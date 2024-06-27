@@ -17,6 +17,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/smoker": {
+    "criteria": {
+      "has_furnace": "2024-06-27 02:22:36 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/lever": {
     "criteria": {
       "has_cobblestone": "2024-06-25 02:35:51 +0000"
@@ -611,7 +617,8 @@
       "minecraft:pillager": "2024-06-25 03:47:48 +0000",
       "minecraft:skeleton": "2024-06-25 03:22:48 +0000",
       "minecraft:magma_cube": "2024-06-25 03:24:01 +0000",
-      "minecraft:stray": "2024-06-25 03:38:30 +0000"
+      "minecraft:stray": "2024-06-25 03:38:30 +0000",
+      "minecraft:zombie": "2024-06-27 02:25:33 +0000"
     },
     "done": false
   },
@@ -810,6 +817,12 @@
   "justhammers:recipes/justhammers.justhammers_tab/stone_reinforced_impact_hammer": {
     "criteria": {
       "has_material": "2024-06-25 03:21:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2024-06-27 02:23:49 +0000"
     },
     "done": true
   },
@@ -1299,6 +1312,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2024-06-27 02:23:49 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/stone_pickaxe": {
     "criteria": {
       "has_cobblestone": "2024-06-25 02:35:51 +0000"
@@ -1537,6 +1556,12 @@
   "minecraft:recipes/food/cooked_mutton": {
     "criteria": {
       "has_mutton": "2024-06-25 03:43:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_iron_block": {
+    "criteria": {
+      "has_raw_iron": "2024-06-27 02:23:49 +0000"
     },
     "done": true
   },
@@ -1813,6 +1838,7 @@
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "sweet_berries": "2024-06-25 02:41:44 +0000",
+      "baked_potato": "2024-06-27 02:21:47 +0000",
       "apple": "2024-06-25 02:56:35 +0000",
       "bread": "2024-06-25 03:01:42 +0000"
     },
@@ -2389,6 +2415,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/snow": {
+    "criteria": {
+      "has_snowball": "2024-06-27 02:19:46 +0000"
+    },
+    "done": true
+  },
   "aquaculture:recipes/aquaculture/fishing_line": {
     "criteria": {
       "has_items": "2024-06-25 02:30:40 +0000"
@@ -2884,6 +2916,12 @@
   "grimoireofgaia:main/minotaurus": {
     "criteria": {
       "kill": "2024-06-25 03:15:43 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/snow_block": {
+    "criteria": {
+      "has_snowball": "2024-06-27 02:19:46 +0000"
     },
     "done": true
   },

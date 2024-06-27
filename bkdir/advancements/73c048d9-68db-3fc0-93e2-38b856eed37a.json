@@ -510,6 +510,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2024-06-27 22:55:01 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/armor_stand": {
     "criteria": {
       "has_stone_slab": "2024-06-25 03:46:00 +0000"
@@ -555,6 +561,12 @@
   "minecraft:recipes/building_blocks/oak_stairs": {
     "criteria": {
       "has_planks": "2024-06-25 03:44:56 +0000"
+    },
+    "done": true
+  },
+  "securitycraft:recipes/securitycraft/crystal_quartz_item": {
+    "criteria": {
+      "has_prismarine_crystals": "2024-06-27 22:54:48 +0000"
     },
     "done": true
   },
@@ -1123,6 +1135,12 @@
   "tombstone:adventure/teleport_to_grave": {
     "criteria": {
       "coded_trigger": "2024-06-27 22:50:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sea_lantern": {
+    "criteria": {
+      "has_prismarine_crystals": "2024-06-27 22:54:48 +0000"
     },
     "done": true
   },

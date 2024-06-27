@@ -54,7 +54,7 @@ def download_latest_release(download_path='.'):
 			time.sleep(1.5)
 		pathto = os.path.join(download_path, version)
 		with open(pathto, 'wb') as archivo:
-			archivo.write(requests.get(url).content)
+			archivo.write(requests.get(url).content)1
 		return version
 flnm=download_latest_release()
 if flnm.split(".")[-1] == "msp":

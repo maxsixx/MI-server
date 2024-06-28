@@ -1,0 +1,580 @@
+---- Minecraft Crash Report ----
+// Ouch. That hurt :(
+
+Time: 2024-06-28 00:38:25
+Description: Watching Server
+
+java.lang.Error: ServerHangWatchdog detected that a single server tick took 60.00 seconds (should be max 0.05)
+	at net.minecraft.server.level.ServerChunkCache$$Lambda/0x00007aa7420661c8.getAsBoolean(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.thread.BlockableEventLoop.m_18701_(BlockableEventLoop.java:139) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:mixin,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.server.level.ServerChunkCache.m_7587_(ServerChunkCache.java:130) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.Level.m_6522_(Level.java:179) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:LevelMixin,pl:mixin:APP:sereneseasons.mixins.json:MixinLevel,pl:mixin:A}
+	at net.minecraft.world.level.LevelReader.m_46819_(LevelReader.java:129) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:computing_frames,re:mixin,re:classloading}
+	at net.minecraft.world.level.chunk.ChunkGenerator.m_223198_(ChunkGenerator.java:365) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:ChunkGeneratorMixin,pl:mixin:A}
+	at net.minecraft.world.level.chunk.ChunkGenerator.m_223188_(ChunkGenerator.java:344) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:ChunkGeneratorMixin,pl:mixin:A}
+	at net.minecraft.world.level.chunk.ChunkGenerator.m_223037_(ChunkGenerator.java:284) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:ChunkGeneratorMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerLevel.m_215011_(ServerLevel.java:1118) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:sereneseasons:temperature_transformer,re:classloading,pl:accesstransformer:B,xf:fml:sereneseasons:temperature_transformer,pl:mixin:APP:forge-mca.mixin.json:MixinServerWorld,pl:mixin:APP:citadel.mixins.json:ServerLevelMixin,pl:mixin:APP:zombieawareness.mixins.json:MixinPlaySound,pl:mixin:APP:zombieawareness.mixins.json:MixinLevelEvent,pl:mixin:A}
+	at net.minecraft.world.level.storage.loot.functions.ExplorationMapFunction.m_7372_(ExplorationMapFunction.java:76) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading}
+	at net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction.apply(LootItemConditionalFunction.java:31) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction.apply(LootItemConditionalFunction.java:20) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.level.storage.loot.functions.LootItemFunction.m_80728_(LootItemFunction.java:14) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.level.storage.loot.functions.LootItemFunction$$Lambda/0x00007aa741f31f08.accept(Unknown Source) ~[?:?] {}
+	at net.minecraft.world.level.storage.loot.entries.LootItem.m_6948_(LootItem.java:33) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading}
+	at net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer$1.m_6941_(LootPoolSingletonContainer.java:59) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading}
+	at net.minecraft.world.level.storage.loot.LootPool.m_79058_(LootPool.java:80) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.storage.loot.LootPool.m_79053_(LootPool.java:95) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.storage.loot.LootTable.m_79131_(LootTable.java:72) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,re:classloading,pl:mixin:APP:tombstone.mixins.json:accessor.LootTableAccessor,pl:mixin:A}
+	at net.minecraft.world.level.storage.loot.LootTable.m_79148_(LootTable.java:84) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,re:classloading,pl:mixin:APP:tombstone.mixins.json:accessor.LootTableAccessor,pl:mixin:A}
+	at net.minecraft.world.level.storage.loot.LootTable.m_230922_(LootTable.java:89) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,re:classloading,pl:mixin:APP:tombstone.mixins.json:accessor.LootTableAccessor,pl:mixin:A}
+	at net.minecraft.world.level.storage.loot.LootTable.m_79123_(LootTable.java:110) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,re:classloading,pl:mixin:APP:tombstone.mixins.json:accessor.LootTableAccessor,pl:mixin:A}
+	at net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity.m_59640_(RandomizableContainerBlockEntity.java:82) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,pl:biggerstacks_transformer:B,pl:accesstransformer:B}
+	at net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity.m_7208_(RandomizableContainerBlockEntity.java:160) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,pl:biggerstacks_transformer:B,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerPlayer.m_5893_(ServerPlayer.java:966) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:tombstone.mixins.json:ServerPlayerMixin,pl:mixin:APP:securitycraft.mixins.json:camera.ServerPlayerMixin,pl:mixin:A}
+	at net.minecraft.world.level.block.ChestBlock.m_6227_(ChestBlock.java:236) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:tombstone.mixins.json:ChestBlockMixin,pl:mixin:A}
+	at net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase.m_60664_(BlockBehaviour.java:714) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,re:classloading}
+	at net.minecraft.server.level.ServerPlayerGameMode.m_7179_(ServerPlayerGameMode.java:340) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,re:computing_frames,re:classloading,pl:mixin:APP:justhammers-common.mixins.json:ServerPlayerGameModeMixin,pl:mixin:A}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.m_6371_(ServerGamePacketListenerImpl.java:1060) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:forge-mca.mixin.json:MixinServerPlayNetworkHandler,pl:mixin:APP:biggerstacks.mixins.json:vanilla.stacksize.ServerGamePacketListenerImplMixin,pl:mixin:A}
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.m_5797_(ServerboundUseItemOnPacket.java:34) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading}
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.m_5797_(ServerboundUseItemOnPacket.java:8) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading}
+	at net.minecraft.network.protocol.PacketUtils.m_131356_(PacketUtils.java:22) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,xf:OptiFine:default}
+	at net.minecraft.network.protocol.PacketUtils$$Lambda/0x00007aa742132ab8.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading}
+	at net.minecraft.util.thread.BlockableEventLoop.m_6367_(BlockableEventLoop.java:157) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:mixin,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.m_6367_(ReentrantBlockableEventLoop.java:23) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:computing_frames,re:mixin,re:classloading}
+	at net.minecraft.server.MinecraftServer.m_6367_(MinecraftServer.java:763) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_6367_(MinecraftServer.java:157) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.util.thread.BlockableEventLoop.m_7245_(BlockableEventLoop.java:131) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:mixin,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.server.MinecraftServer.m_129961_(MinecraftServer.java:746) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_7245_(MinecraftServer.java:740) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.util.thread.BlockableEventLoop.m_18701_(BlockableEventLoop.java:140) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:mixin,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.server.MinecraftServer.m_130012_(MinecraftServer.java:726) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:658) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:244) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer$$Lambda/0x00007aa741e54258.run(Unknown Source) ~[?:?] {}
+	at java.lang.Thread.runWith(Thread.java:1596) [?:?] {}
+	at java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at net.minecraft.server.level.ServerChunkCache$$Lambda/0x00007aa7420661c8.getAsBoolean(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.thread.BlockableEventLoop.m_18701_(BlockableEventLoop.java:139) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:mixin,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.server.level.ServerChunkCache.m_7587_(ServerChunkCache.java:130) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.Level.m_6522_(Level.java:179) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:LevelMixin,pl:mixin:APP:sereneseasons.mixins.json:MixinLevel,pl:mixin:A}
+	at net.minecraft.world.level.LevelReader.m_46819_(LevelReader.java:129) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:computing_frames,re:mixin,re:classloading}
+	at net.minecraft.world.level.chunk.ChunkGenerator.m_223198_(ChunkGenerator.java:365) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:ChunkGeneratorMixin,pl:mixin:A}
+	at net.minecraft.world.level.chunk.ChunkGenerator.m_223188_(ChunkGenerator.java:344) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:ChunkGeneratorMixin,pl:mixin:A}
+	at net.minecraft.world.level.chunk.ChunkGenerator.m_223037_(ChunkGenerator.java:284) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:ChunkGeneratorMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerLevel.m_215011_(ServerLevel.java:1118) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:sereneseasons:temperature_transformer,re:classloading,pl:accesstransformer:B,xf:fml:sereneseasons:temperature_transformer,pl:mixin:APP:forge-mca.mixin.json:MixinServerWorld,pl:mixin:APP:citadel.mixins.json:ServerLevelMixin,pl:mixin:APP:zombieawareness.mixins.json:MixinPlaySound,pl:mixin:APP:zombieawareness.mixins.json:MixinLevelEvent,pl:mixin:A}
+	at net.minecraft.world.level.storage.loot.functions.ExplorationMapFunction.m_7372_(ExplorationMapFunction.java:76) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading}
+	at net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction.apply(LootItemConditionalFunction.java:31) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction.apply(LootItemConditionalFunction.java:20) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.level.storage.loot.functions.LootItemFunction.m_80728_(LootItemFunction.java:14) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.level.storage.loot.functions.LootItemFunction$$Lambda/0x00007aa741f31f08.accept(Unknown Source) ~[?:?] {}
+	at net.minecraft.world.level.storage.loot.entries.LootItem.m_6948_(LootItem.java:33) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading}
+	at net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer$1.m_6941_(LootPoolSingletonContainer.java:59) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading}
+	at net.minecraft.world.level.storage.loot.LootPool.m_79058_(LootPool.java:80) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.storage.loot.LootPool.m_79053_(LootPool.java:95) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.storage.loot.LootTable.m_79131_(LootTable.java:72) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,re:classloading,pl:mixin:APP:tombstone.mixins.json:accessor.LootTableAccessor,pl:mixin:A}
+	at net.minecraft.world.level.storage.loot.LootTable.m_79148_(LootTable.java:84) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,re:classloading,pl:mixin:APP:tombstone.mixins.json:accessor.LootTableAccessor,pl:mixin:A}
+	at net.minecraft.world.level.storage.loot.LootTable.m_230922_(LootTable.java:89) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,re:classloading,pl:mixin:APP:tombstone.mixins.json:accessor.LootTableAccessor,pl:mixin:A}
+	at net.minecraft.world.level.storage.loot.LootTable.m_79123_(LootTable.java:110) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,re:classloading,pl:mixin:APP:tombstone.mixins.json:accessor.LootTableAccessor,pl:mixin:A}
+	at net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity.m_59640_(RandomizableContainerBlockEntity.java:82) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,pl:biggerstacks_transformer:B,pl:accesstransformer:B}
+	at net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity.m_7208_(RandomizableContainerBlockEntity.java:160) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,pl:biggerstacks_transformer:B,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerPlayer.m_5893_(ServerPlayer.java:966) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:tombstone.mixins.json:ServerPlayerMixin,pl:mixin:APP:securitycraft.mixins.json:camera.ServerPlayerMixin,pl:mixin:A}
+	at net.minecraft.world.level.block.ChestBlock.m_6227_(ChestBlock.java:236) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:tombstone.mixins.json:ChestBlockMixin,pl:mixin:A}
+	at net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase.m_60664_(BlockBehaviour.java:714) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,re:classloading}
+	at net.minecraft.server.level.ServerPlayerGameMode.m_7179_(ServerPlayerGameMode.java:340) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,re:computing_frames,re:classloading,pl:mixin:APP:justhammers-common.mixins.json:ServerPlayerGameModeMixin,pl:mixin:A}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.m_6371_(ServerGamePacketListenerImpl.java:1060) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:forge-mca.mixin.json:MixinServerPlayNetworkHandler,pl:mixin:APP:biggerstacks.mixins.json:vanilla.stacksize.ServerGamePacketListenerImplMixin,pl:mixin:A}
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.m_5797_(ServerboundUseItemOnPacket.java:34) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading}
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.m_5797_(ServerboundUseItemOnPacket.java:8) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading}
+	at net.minecraft.network.protocol.PacketUtils.m_131356_(PacketUtils.java:22) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading,xf:OptiFine:default}
+	at net.minecraft.network.protocol.PacketUtils$$Lambda/0x00007aa742132ab8.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading}
+	at net.minecraft.util.thread.BlockableEventLoop.m_6367_(BlockableEventLoop.java:157) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:mixin,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.m_6367_(ReentrantBlockableEventLoop.java:23) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:computing_frames,re:mixin,re:classloading}
+	at net.minecraft.server.MinecraftServer.m_6367_(MinecraftServer.java:763) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_6367_(MinecraftServer.java:157) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.util.thread.BlockableEventLoop.m_7245_(BlockableEventLoop.java:131) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:mixin,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.server.MinecraftServer.m_129961_(MinecraftServer.java:746) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_7245_(MinecraftServer.java:740) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.util.thread.BlockableEventLoop.m_18701_(BlockableEventLoop.java:140) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:mixin,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.server.MinecraftServer.m_130012_(MinecraftServer.java:726) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:658) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:244) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:balm.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer$$Lambda/0x00007aa741e54258.run(Unknown Source) ~[?:?] {}
+-- Thread Dump --
+Details:
+	Threads: "Reference Handler" daemon prio=10 Id=9 RUNNABLE
+	at java.base@21.0.3/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@21.0.3/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+	at java.base@21.0.3/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+
+
+"Finalizer" daemon prio=8 Id=10 WAITING on java.lang.ref.NativeReferenceQueue$Lock@73bb309d
+	at java.base@21.0.3/java.lang.Object.wait0(Native Method)
+	-  waiting on java.lang.ref.NativeReferenceQueue$Lock@73bb309d
+	at java.base@21.0.3/java.lang.Object.wait(Object.java:366)
+	at java.base@21.0.3/java.lang.Object.wait(Object.java:339)
+	at java.base@21.0.3/java.lang.ref.NativeReferenceQueue.await(NativeReferenceQueue.java:48)
+	at java.base@21.0.3/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+	at java.base@21.0.3/java.lang.ref.NativeReferenceQueue.remove(NativeReferenceQueue.java:89)
+	at java.base@21.0.3/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:173)
+
+
+"Signal Dispatcher" daemon prio=9 Id=11 RUNNABLE
+
+
+"Common-Cleaner" daemon prio=8 Id=17 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7d7cd09a
+	at java.base@21.0.3/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7d7cd09a
+	at java.base@21.0.3/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@21.0.3/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+	at java.base@21.0.3/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+	at java.base@21.0.3/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+	at java.base@21.0.3/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+	at java.base@21.0.3/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	...
+
+
+"Notification Thread" daemon prio=9 Id=18 RUNNABLE
+
+
+"FileSystemWatchService" daemon prio=5 Id=30 RUNNABLE (in native)
+	at java.base@21.0.3/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.3/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.3/java.lang.Thread.run(Thread.java:1583)
+
+
+"Timer hack thread" daemon prio=5 Id=32 TIMED_WAITING
+	at java.base@21.0.3/java.lang.Thread.sleep0(Native Method)
+	at java.base@21.0.3/java.lang.Thread.sleep(Thread.java:509)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.Util$9.run(Util.java:673)
+
+
+"modloading-worker-0" daemon prio=5 Id=34 WAITING on java.util.concurrent.ForkJoinPool@79435bed
+	at java.base@21.0.3/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@79435bed
+	at java.base@21.0.3/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.3/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+	at java.base@21.0.3/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+	at java.base@21.0.3/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"modloading-worker-0" daemon prio=5 Id=35 TIMED_WAITING on java.util.concurrent.ForkJoinPool@79435bed
+	at java.base@21.0.3/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@79435bed
+	at java.base@21.0.3/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:449)
+	at java.base@21.0.3/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1891)
+	at java.base@21.0.3/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+	at java.base@21.0.3/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"FileSystemWatchService" daemon prio=5 Id=37 RUNNABLE (in native)
+	at java.base@21.0.3/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.3/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.3/java.lang.Thread.run(Thread.java:1583)
+
+
+"FileSystemWatchService" daemon prio=5 Id=38 RUNNABLE (in native)
+	at java.base@21.0.3/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.3/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.3/java.lang.Thread.run(Thread.java:1583)
+
+
+"FileSystemWatchService" daemon prio=5 Id=39 RUNNABLE (in native)
+	at java.base@21.0.3/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.3/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.3/java.lang.Thread.run(Thread.java:1583)
+
+
+"FileSystemWatchService" daemon prio=5 Id=40 RUNNABLE (in native)
+	at java.base@21.0.3/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.3/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.3/java.lang.Thread.run(Thread.java:1583)
+
+
+"WorldEdit Session Manager" prio=5 Id=52 TIMED_WAITING on java.util.TaskQueue@3c41daa1
+	at java.base@21.0.3/java.lang.Object.wait0(Native Method)
+	-  waiting on java.util.TaskQueue@3c41daa1
+	at java.base@21.0.3/java.lang.Object.wait(Object.java:366)
+	at java.base@21.0.3/java.util.TimerThread.mainLoop(Timer.java:563)
+	at java.base@21.0.3/java.util.TimerThread.run(Timer.java:516)
+
+
+"Worker-Main-1" daemon prio=5 Id=54 WAITING on java.util.concurrent.ForkJoinPool@16543a6c
+	at java.base@21.0.3/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16543a6c
+	at java.base@21.0.3/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.3/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+	at java.base@21.0.3/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+	at java.base@21.0.3/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"Worker-Main-2" daemon prio=5 Id=55 WAITING on java.util.concurrent.ForkJoinPool@16543a6c
+	at java.base@21.0.3/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@16543a6c
+	at java.base@21.0.3/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.3/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+	at java.base@21.0.3/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+	at java.base@21.0.3/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"Worker-Main-3" daemon prio=5 Id=56 RUNNABLE
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.levelgen.synth.ImprovedNoise.m_75327_(ImprovedNoise.java:75)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.levelgen.synth.PerlinNoise.m_75417_(PerlinNoise.java:165)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.levelgen.synth.PerlinNoise.m_75408_(PerlinNoise.java:150)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.levelgen.synth.NormalNoise.m_75380_(NormalNoise.java:98)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.levelgen.DensityFunction$NoiseHolder.m_224006_(DensityFunction.java:54)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.levelgen.DensityFunctions$ShiftedNoise.m_207386_(DensityFunctions.java:669)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.levelgen.NoiseChunk$FlatCache.m_207386_(NoiseChunk.java:453)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.levelgen.DensityFunctions$Spline$Coordinate.m_183321_(DensityFunctions.java:1255)
+	...
+
+
+"Server thread" prio=5 Id=57 RUNNABLE
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.server.level.ServerChunkCache$$Lambda/0x00007aa7420661c8.getAsBoolean(Unknown Source)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.util.thread.BlockableEventLoop.m_18701_(BlockableEventLoop.java:139)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.server.level.ServerChunkCache.m_7587_(ServerChunkCache.java:130)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.Level.m_6522_(Level.java:179)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.LevelReader.m_46819_(LevelReader.java:129)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.chunk.ChunkGenerator.m_223198_(ChunkGenerator.java:365)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.chunk.ChunkGenerator.m_223188_(ChunkGenerator.java:344)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.chunk.ChunkGenerator.m_223037_(ChunkGenerator.java:284)
+	...
+
+
+"Server console handler" daemon prio=5 Id=59 RUNNABLE
+	at java.base@21.0.3/java.io.FileInputStream.read0(Native Method)
+	at java.base@21.0.3/java.io.FileInputStream.read(FileInputStream.java:231)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.terminal.impl.AbstractPty$PtyInputStream.read(AbstractPty.java:73)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.utils.NonBlockingInputStream.read(NonBlockingInputStream.java:62)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.utils.NonBlocking$NonBlockingInputStreamReader.read(NonBlocking.java:168)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57)
+	at MC-BOOTSTRAP/jline.reader@3.12.1/org.jline.keymap.BindingReader.readCharacter(BindingReader.java:133)
+	at MC-BOOTSTRAP/jline.reader@3.12.1/org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+	...
+
+
+"DestroyJavaVM" prio=5 Id=60 RUNNABLE
+
+
+"Netty Epoll Server IO #0" daemon prio=5 Id=61 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	...
+
+
+"FileSystemWatchService" daemon prio=5 Id=62 RUNNABLE (in native)
+	at java.base@21.0.3/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.3/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.3/java.lang.Thread.run(Thread.java:1583)
+
+
+"FileSystemWatchService" daemon prio=5 Id=64 RUNNABLE (in native)
+	at java.base@21.0.3/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.3/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.3/java.lang.Thread.run(Thread.java:1583)
+
+
+"Config file watcher thread" prio=5 Id=63 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@d37c03c
+	at java.base@21.0.3/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@d37c03c
+	at java.base@21.0.3/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.3/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@21.0.3/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@21.0.3/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@21.0.3/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1707)
+	at java.base@21.0.3/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:485)
+	at java.base@21.0.3/java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:673)
+	...
+
+
+"IO-Worker-4" prio=5 Id=65 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@6ec87e44
+	at java.base@21.0.3/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@6ec87e44
+	at java.base@21.0.3/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.3/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.3/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.3/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:233)
+	at java.base@21.0.3/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:336)
+	at java.base@21.0.3/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.3/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	...
+
+
+"IO-Worker-6" prio=5 Id=67 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@6ec87e44
+	at java.base@21.0.3/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@6ec87e44
+	at java.base@21.0.3/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.3/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.3/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.3/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:233)
+	at java.base@21.0.3/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:336)
+	at java.base@21.0.3/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.3/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	...
+
+
+"Server Watchdog" daemon prio=5 Id=70 RUNNABLE
+	at java.management@21.0.3/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@21.0.3/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:518)
+	at java.management@21.0.3/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:506)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.server.dedicated.ServerWatchdog.run(ServerWatchdog.java:41)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.3/java.lang.Thread.run(Thread.java:1583)
+
+
+"Netty Epoll Server IO #1" daemon prio=5 Id=75 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	...
+
+
+"Netty Epoll Server IO #2" daemon prio=5 Id=76 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	...
+
+
+"Netty Epoll Server IO #3" daemon prio=5 Id=78 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	...
+
+
+"Netty Epoll Server IO #4" daemon prio=5 Id=79 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	...
+
+
+"Netty Epoll Server IO #5" daemon prio=5 Id=80 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	...
+
+
+"Netty Epoll Server IO #6" daemon prio=5 Id=81 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	...
+
+
+"Netty Epoll Server IO #7" daemon prio=5 Id=82 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.3/java.lang.Thread.runWith(Thread.java:1596)
+	...
+
+
+
+Stacktrace:
+	at net.minecraft.server.dedicated.ServerWatchdog.run(ServerWatchdog.java:56) ~[server-1.19.2-20220805.130853-srg.jar%23257!/:?] {re:classloading}
+	at java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+-- Performance stats --
+Details:
+	Random tick rate: 3
+	Level stats: ResourceKey[minecraft:dimension / minecraft:overworld]: players: 2, entities: 434,434,285,1154,1154,0,0 [minecraft:item:81,alexsmobs:crow:33,minecraft:chicken:32,minecraft:bee:26,minecraft:pig:23], block_entities: 226 [minecraft:sculk_sensor:61,minecraft:chest:54,minecraft:mob_spawner:43,minecraft:sculk_catalyst:18,minecraft:beehive:14], block_ticks: 927, fluid_ticks: 138, chunk_source: Chunks[S] W: 6185 E: 434,434,285,1154,1154,0,0,
+ResourceKey[minecraft:dimension / minecraft:the_end]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / deeperdarker:otherside]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / midnight_madness:the_underworld]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / minecraft:the_nether]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / man:halucination]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Linux (amd64) version 6.5.0-1022-azure
+	Java Version: 21.0.3, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Microsoft
+	Memory: 1075808032 bytes (1025 MiB) / 3942645760 bytes (3760 MiB) up to 4190109696 bytes (3996 MiB)
+	CPUs: 4
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD EPYC 7763 64-Core Processor
+	Identifier: AuthenticAMD Family 25 Model 1 Stepping 1
+	Microarchitecture: Zen 3
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 2
+	Number of logical CPUs: 4
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MB): 7990.52
+	Virtual memory used (MB): 7572.36
+	Swap memory total (MB): 0.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 0 total; 
+	Server Running: true
+	Player Count: 2 / 20; [ServerPlayer['4ld1uwu'/847, l='ServerLevel[world]', x=-2298.51, y=153.00, z=-7896.79], ServerPlayer['Xx_maxsi_xX'/1198, l='ServerLevel[world]', x=-2298.29, y=137.00, z=-7895.02]]
+	Data Packs: vanilla, mod:forge, mod:securitycraft, mod:cyclopscore (incompatible), mod:jei (incompatible), mod:dynamiclights (incompatible), mod:obscure_api, mod:sophisticatedcore (incompatible), mod:waystones (incompatible), mod:journeymap (incompatible), mod:citadel, mod:alexsmobs (incompatible), mod:sereneseasons, mod:evilcraft (incompatible), mod:zombieawareness (incompatible), mod:sophisticatedbackpacks (incompatible), mod:simpleplanes (incompatible), mod:grimoireofgaia (incompatible), mod:mermod (incompatible), mod:additional_lights, mod:midnight_madness, mod:balm (incompatible), mod:terralith (incompatible), mod:biggerstacks (incompatible), mod:twisted_horrors, mod:ctov (incompatible), mod:the_one_who_watches, mod:dungeons_arise, mod:libipn (incompatible), mod:radiantgear, mod:jade (incompatible), mod:explorify, mod:watching (incompatible), mod:kotlinforforge (incompatible), mod:golems, mod:curiouslanterns, mod:fuze_relics, mod:curios, mod:man, mod:hmag, mod:gothic, mod:tombstone, mod:worldedit (incompatible), mod:coroutil (incompatible), mod:endofherobrine (incompatible), mod:inventoryprofilesnext (incompatible), mod:architectury (incompatible), mod:mca (incompatible), mod:justhammers (incompatible), mod:vampirism (incompatible), mod:vampirism_integrations (incompatible), mod:puzzleslib (incompatible), mod:aquaculture, mod:fallingtree, mod:smallships (incompatible), mod:deeper_oceans, mod:geckolib3 (incompatible), mod:mimic_dweller, mod:cave_dweller, mod:steve_dweller, mod:pale_hound, mod:enchantinginfuser (incompatible), mod:cursed_sheep, mod:corpse_stalker, mod:aquamirae, mod:bossominium, mod:hangglider (incompatible), mod:myceliummire, mod:elevatorid (incompatible), mod:paragon, mod:advancementplaques (incompatible), mod:iceberg (incompatible), mod:deeperdarker, mod:simplyhotsprings, mod:easymagic (incompatible), mod:bookshelf (incompatible), mod:enchdesc (incompatible), mod:domesticationinnovation
+	World Generation: Experimental
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar OptiFine TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		kotlinforforge@3.12.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		simplyhotsprings-1.19.2-0.3.0.jar                 |Simply Hot Springs            |simplyhotsprings              |1.19.2-0.3.0        |DONE      |Manifest: NOSIGNATURE
+		CyclopsCore-1.19.2-1.19.1.jar                     |Cyclops Core                  |cyclopscore                   |1.19.1              |DONE      |Manifest: NOSIGNATURE
+		EasyMagic-v4.3.3-1.19.2-Forge.jar                 |Easy Magic                    |easymagic                     |4.3.3               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		jei-1.19.2-forge-11.5.2.1000.jar                  |Just Enough Items             |jei                           |11.5.2.1000         |DONE      |Manifest: NOSIGNATURE
+		paragon-forge-3.0.2-1.19x.jar                     |Paragon                       |paragon                       |3.0.2               |DONE      |Manifest: NOSIGNATURE
+		dynamiclights-1.19.2.2.jar                        |Dynamic Lights                |dynamiclights                 |1.19.2.2            |DONE      |Manifest: NOSIGNATURE
+		obscure_api-15.jar                                |Obscure API                   |obscure_api                   |15                  |DONE      |Manifest: NOSIGNATURE
+		sophisticatedcore-1.19.2-0.6.4.605.jar            |Sophisticated Core            |sophisticatedcore             |1.19.2-0.6.4.605    |DONE      |Manifest: NOSIGNATURE
+		waystones-forge-1.19.2-11.4.2.jar                 |Waystones                     |waystones                     |11.4.2              |DONE      |Manifest: NOSIGNATURE
+		journeymap-1.19.2-5.9.4-forge.jar                 |Journeymap                    |journeymap                    |5.9.4               |DONE      |Manifest: NOSIGNATURE
+		citadel-2.1.1-1.19.jar                            |Citadel                       |citadel                       |2.1.1               |DONE      |Manifest: NOSIGNATURE
+		alexsmobs-1.21.1.jar                              |Alex's Mobs                   |alexsmobs                     |1.21.1              |DONE      |Manifest: NOSIGNATURE
+		SereneSeasons-1.19.2-8.1.0.24.jar                 |Serene Seasons                |sereneseasons                 |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+		EvilCraft-1.19.2-1.2.30.jar                       |EvilCraft                     |evilcraft                     |1.2.30              |DONE      |Manifest: NOSIGNATURE
+		zombieawareness-1.19.2-1.12.3.jar                 |Zombie Awareness              |zombieawareness               |1.19.2-1.12.3       |DONE      |Manifest: NOSIGNATURE
+		Bookshelf-Forge-1.19.2-16.3.20.jar                |Bookshelf                     |bookshelf                     |16.3.20             |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		sophisticatedbackpacks-1.19.2-3.20.2.1035.jar     |Sophisticated Backpacks       |sophisticatedbackpacks        |1.19.2-3.20.2.1035  |DONE      |Manifest: NOSIGNATURE
+		simpleplanes-1.19.2-5.2.2.jar                     |Simple Planes                 |simpleplanes                  |1.19.2-5.2.2        |DONE      |Manifest: NOSIGNATURE
+		GrimoireOfGaia4-1.19.2-3.0.0-alpha.10.jar         |Grimoire of Gaia 4            |grimoireofgaia                |3.0.0-alpha.10      |DONE      |Manifest: NOSIGNATURE
+		mermod-forge-1.11.jar                             |Mermod                        |mermod                        |1.11                |DONE      |Manifest: NOSIGNATURE
+		additional_lights-1.19-2.1.6.jar                  |Additional Lights             |additional_lights             |2.1.6               |DONE      |Manifest: NOSIGNATURE
+		[1.19.2]MidnightMadness-1.3.3.jar                 |Midnight Madness              |midnight_madness              |1.3.3               |DONE      |Manifest: NOSIGNATURE
+		balm-forge-1.19.2-4.6.0.jar                       |Balm                          |balm                          |4.6.0               |DONE      |Manifest: NOSIGNATURE
+		Terralith_v2.3.4.jar                              |Terralith                     |terralith                     |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+		biggerstacks-1.19.2-3.8.1-all.jar                 |Bigger Stacks                 |biggerstacks                  |1.19.2-3.8.1        |DONE      |Manifest: NOSIGNATURE
+		Twisted-Horrors_1.19.2_v1.jar                     |Twisted Horrors               |twisted_horrors               |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		forge-1.19.2-43.3.0-universal.jar                 |Forge                         |forge                         |43.3.0              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		ctov-3.2.6c.jar                                   |ChoiceTheorem's Overhauled Vil|ctov                          |3.2.6c              |DONE      |Manifest: NOSIGNATURE
+		TheOneWhoWatches-V1.3.0-1.19.2.jar                |The One Who Watches           |the_one_who_watches           |1.3.0               |DONE      |Manifest: NOSIGNATURE
+		AdvancementPlaques-1.19.2-1.4.7.jar               |Advancement Plaques           |advancementplaques            |1.4.7               |DONE      |Manifest: NOSIGNATURE
+		DungeonsArise-1.19.2-2.1.56-beta.jar              |When Dungeons Arise           |dungeons_arise                |2.1.56-1.19.2       |DONE      |Manifest: NOSIGNATURE
+		server-1.19.2-20220805.130853-srg.jar             |Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: NOSIGNATURE
+		libIPN-forge-1.19-4.0.2.jar                       |libIPN                        |libipn                        |4.0.2               |DONE      |Manifest: NOSIGNATURE
+		EnchantmentDescriptions-Forge-1.19.2-13.0.14.jar  |EnchantmentDescriptions       |enchdesc                      |13.0.14             |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		radiantgear-forge-2.0.3+1.19.2.jar                |Radiant Gear                  |radiantgear                   |2.0.3+1.19.2        |DONE      |Manifest: NOSIGNATURE
+		Jade-1.19.1-forge-8.9.2.jar                       |Jade                          |jade                          |8.9.2               |DONE      |Manifest: NOSIGNATURE
+		explorify-forge-1.19-1.3.0.jar                    |Explorify                     |explorify                     |1.19-1.3.0          |DONE      |Manifest: NOSIGNATURE
+		Bossominium-U-18-1.19.2.jar                       |Bossominium                   |bossominium                   |18.0.0              |DONE      |Manifest: NOSIGNATURE
+		From-The-Fog-1.19-v1.9.1-Forge-Fabric.jar         |From The Fog                  |watching                      |1.9.1               |DONE      |Manifest: NOSIGNATURE
+		HangGlider-v4.0.0-1.19.2-Forge.jar                |Hang Glider                   |hangglider                    |4.0.0               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		kffmod-3.12.0.jar                                 |Kotlin For Forge              |kotlinforforge                |3.12.0              |DONE      |Manifest: NOSIGNATURE
+		extragolems-19.2.6.jar                            |Extra Golems                  |golems                        |19.2.6              |DONE      |Manifest: NOSIGNATURE
+		curiouslanterns-1.19.2-1.3.3.jar                  |Curious Lanterns              |curiouslanterns               |1.19.2-1.3.3        |DONE      |Manifest: NOSIGNATURE
+		Iceberg-1.19.2-forge-1.1.4.jar                    |Iceberg                       |iceberg                       |1.1.4               |DONE      |Manifest: NOSIGNATURE
+		fuze_relics-1.19.2-1.0.6.jar                      |Fuze Relics                   |fuze_relics                   |1.0.6               |DONE      |Manifest: NOSIGNATURE
+		curios-forge-1.19.2-5.1.6.2.jar                   |Curios API                    |curios                        |1.19.2-5.1.6.2      |DONE      |Manifest: NOSIGNATURE
+		The-Man-From-The-Fog-1.2.4a-1.19.2.jar            |The Man From The Fog          |man                           |1.2.4               |DONE      |Manifest: NOSIGNATURE
+		Myceliummire1.24.jar                              |myceliummire                  |myceliummire                  |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		hmag-forge-mc1.19.2-6.2.18.jar                    |Hostile Mobs and Girls        |hmag                          |6.2.18              |DONE      |Manifest: NOSIGNATURE
+		[1.19.2] SecurityCraft v1.9.6.1.jar               |SecurityCraft                 |securitycraft                 |1.9.6.1             |DONE      |Manifest: NOSIGNATURE
+		elevatorid-1.19.2-1.8.9.jar                       |Elevator Mod                  |elevatorid                    |1.19.2-1.8.9        |DONE      |Manifest: NOSIGNATURE
+		Gothic_RPG_1.0.0_Forge_1.19.2.jar                 |Gothic                        |gothic                        |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		tombstone-1.19.2-8.2.16.jar                       |Corail Tombstone              |tombstone                     |8.2.16              |DONE      |Manifest: NOSIGNATURE
+		worldedit-mod-7.2.12.jar                          |WorldEdit                     |worldedit                     |7.2.12+6240-87f4ae1 |DONE      |Manifest: NOSIGNATURE
+		coroutil-forge-1.19.2-1.3.6.jar                   |CoroUtil                      |coroutil                      |1.19.2-1.3.6        |DONE      |Manifest: NOSIGNATURE
+		endofherobrine-1.19.2-1.0.8.2.jar                 |The End of Herobrine          |endofherobrine                |1.19.2-1.0.8.2      |DONE      |Manifest: NOSIGNATURE
+		InventoryProfilesNext-forge-1.19-1.10.10.jar      |Inventory Profiles Next       |inventoryprofilesnext         |1.10.10             |DONE      |Manifest: NOSIGNATURE
+		deeperdarker-forge-1.1.6-forge.jar                |Deeper and Darker             |deeperdarker                  |1.1.6               |DONE      |Manifest: NOSIGNATURE
+		architectury-6.6.92-forge.jar                     |Architectury                  |architectury                  |6.6.92              |DONE      |Manifest: NOSIGNATURE
+		minecraft-comes-alive-7.5.14+1.19.2-universal.jar |Minecraft Comes Alive         |mca                           |7.5.14+1.19.2       |DONE      |Manifest: NOSIGNATURE
+		justhammers-forge-1.0.0+mc1.19.2.jar              |Just Hammers                  |justhammers                   |1.0.0+mc1.19.2      |DONE      |Manifest: NOSIGNATURE
+		Vampirism-1.19.2-1.9.5.jar                        |Vampirism                     |vampirism                     |1.9.5               |DONE      |Manifest: NOSIGNATURE
+		VampirismIntegrations-1.19.2-1.8.0.jar            |Vampirism Integrations        |vampirism_integrations        |1.8.0               |DONE      |Manifest: NOSIGNATURE
+		PuzzlesLib-v4.4.3-1.19.2-Forge.jar                |Puzzles Lib                   |puzzleslib                    |4.4.3               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		Aquaculture-1.19.2-2.4.17.jar                     |Aquaculture 2                 |aquaculture                   |1.19.2-2.4.17       |DONE      |Manifest: NOSIGNATURE
+		FallingTree-1.19.2-3.9.2.jar                      |FallingTree                   |fallingtree                   |3.9.2               |DONE      |Manifest: 3c:8e:df:6c:df:a6:2a:9f:af:64:ea:04:9a:cf:65:92:3b:54:93:0e:96:50:b4:52:e1:13:42:18:2b:ae:40:29
+		smallships-forge-1.19.2-2.0.0-b1.1.jar            |Small Ships                   |smallships                    |2.0.0-b1.1          |DONE      |Manifest: NOSIGNATURE
+		deeper_oceans-1.19-v1-0.jar                       |Deeper Oceans                 |deeper_oceans                 |1.0                 |DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.19-3.1.40.jar                    |GeckoLib                      |geckolib3                     |3.1.40              |DONE      |Manifest: NOSIGNATURE
+		mimic_dweller-1.19.2-1.7.0.jar                    |mimic_dweller                 |mimic_dweller                 |1.7.0               |DONE      |Manifest: NOSIGNATURE
+		Cave Dweller Reimagined.jar                       |cave_dweller                  |cave_dweller                  |1.6.4               |DONE      |Manifest: NOSIGNATURE
+		steve_dweller-1.19.2-1.7.0.jar                    |steve_dweller                 |steve_dweller                 |1.7.0               |DONE      |Manifest: NOSIGNATURE
+		Pale_Hound-1.19.2-1.9.5.jar                       |Pale Hound                    |pale_hound                    |1.9.5               |DONE      |Manifest: NOSIGNATURE
+		EnchantingInfuser-v4.2.2-1.19.2-Forge.jar         |Enchanting Infuser            |enchantinginfuser             |4.2.2               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		domesticationinnovation-1.6.1-1.19.2.jar          |Domestication Innovation      |domesticationinnovation       |1.6.1               |DONE      |Manifest: NOSIGNATURE
+		cursed_sheep-1.19.2-1.7.0 (2).jar                 |cursed_sheep                  |cursed_sheep                  |1.7.0               |DONE      |Manifest: NOSIGNATURE
+		corpse_stalker-1.19.2-By FlamcO4.jar              |corpse_stalker                |corpse_stalker                |1.7.0               |DONE      |Manifest: NOSIGNATURE
+		aquamirae-6.API15.jar                             |Aquamirae                     |aquamirae                     |6.API15             |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: a901c108-83dc-4d75-ae1e-39f1af3cb7a7
+	FML: 43.3
+	Forge: net.minecraftforge:43.3.0

@@ -287,6 +287,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/dispenser": {
+    "criteria": {
+      "has_bow": "2024-06-28 02:25:02 +0000"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/electrified_iron_fence": {
     "criteria": {
       "has_iron": "2024-06-25 02:45:37 +0000"
@@ -3042,6 +3048,12 @@
     },
     "done": true
   },
+  "grimoireofgaia:main/banshee": {
+    "criteria": {
+      "kill": "2024-06-28 02:22:54 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/item_frame": {
     "criteria": {
       "has_leather": "2024-06-25 03:15:51 +0000"
@@ -3789,6 +3801,12 @@
   "minecraft:story/form_obsidian": {
     "criteria": {
       "obsidian": "2024-06-25 03:46:30 +0000"
+    },
+    "done": true
+  },
+  "midnight_madness:a_bad_necromancer": {
+    "criteria": {
+      "a_bad_necromancer": "2024-06-28 02:22:56 +0000"
     },
     "done": true
   },

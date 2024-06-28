@@ -293,6 +293,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cake": {
+    "criteria": {
+      "has_egg": "2024-06-28 03:00:25 +0000"
+    },
+    "done": true
+  },
   "vampirism:recipes/vampirism/general/throne": {
     "criteria": {
       "has_stick": "2024-06-25 02:34:44 +0000"
@@ -2190,6 +2196,12 @@
     },
     "done": true
   },
+  "tombstone:adventure/bone_crusher": {
+    "criteria": {
+      "coded_trigger": "2024-06-28 03:00:33 +0000"
+    },
+    "done": true
+  },
   "tombstone:adventure/chain_death": {
     "criteria": {
       "coded_trigger": "2024-06-25 03:14:49 +0000"
@@ -3337,6 +3349,12 @@
   "minecraft:recipes/combat/leather_chestplate": {
     "criteria": {
       "has_leather": "2024-06-25 02:59:25 +0000"
+    },
+    "done": true
+  },
+  "mca:recipes/misc/potions": {
+    "criteria": {
+      "has_item": "2024-06-28 03:00:25 +0000"
     },
     "done": true
   },

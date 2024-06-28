@@ -173,6 +173,12 @@
     },
     "done": true
   },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_chestplate": "2024-06-28 01:45:16 +0000"
+    },
+    "done": true
+  },
   "vampirism:recipes/vampirism/hunter/cross": {
     "criteria": {
       "has_planks": "2024-06-25 02:34:52 +0000"
@@ -480,6 +486,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/spyglass": {
+    "criteria": {
+      "has_amethyst_shard": "2024-06-28 01:59:26 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/pink_concrete_powder": {
     "criteria": {
       "has_sand": "2024-06-25 02:46:32 +0000"
@@ -549,6 +561,12 @@
   "smallships:recipes/transportation/oak_brigg": {
     "criteria": {
       "in_water": "2024-06-25 02:43:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tinted_glass": {
+    "criteria": {
+      "has_amethyst_shard": "2024-06-28 01:59:26 +0000"
     },
     "done": true
   },
@@ -809,6 +827,12 @@
       "endofherobrine:sheep": "2024-06-27 02:59:34 +0000"
     },
     "done": false
+  },
+  "vampirism:recipes/vampirism/general/blood_sieve": {
+    "criteria": {
+      "has_cauldron": "2024-06-28 02:06:27 +0000"
+    },
+    "done": true
   },
   "minecraft:recipes/redstone/lightning_rod": {
     "criteria": {
@@ -1219,6 +1243,18 @@
     },
     "done": true
   },
+  "enchantinginfuser:recipes/decorations/enchanting_infuser": {
+    "criteria": {
+      "has_amethyst_shard": "2024-06-28 01:59:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/amethyst_block": {
+    "criteria": {
+      "has_amethyst_shard": "2024-06-28 01:59:26 +0000"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/username_logger": {
     "criteria": {
       "has_redstone": "2024-06-25 02:51:58 +0000"
@@ -1510,6 +1546,12 @@
   "minecraft:recipes/redstone/oak_trapdoor": {
     "criteria": {
       "has_planks": "2024-06-25 03:44:56 +0000"
+    },
+    "done": true
+  },
+  "securitycraft:recipes/securitycraft/reinforced_tinted_glass": {
+    "criteria": {
+      "has_amethyst_shard": "2024-06-28 01:59:26 +0000"
     },
     "done": true
   },
@@ -2607,6 +2649,12 @@
   "minecraft:recipes/decorations/white_banner": {
     "criteria": {
       "has_white_wool": "2024-06-25 03:34:08 +0000"
+    },
+    "done": true
+  },
+  "enchantinginfuser:recipes/decorations/advanced_enchanting_infuser": {
+    "criteria": {
+      "has_the_recipe": "2024-06-28 01:59:26 +0000"
     },
     "done": true
   },
@@ -4168,6 +4216,12 @@
   "minecraft:recipes/decorations/light_gray_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2024-06-25 03:50:20 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bone_block": {
+    "criteria": {
+      "has_bone_meal": "2024-06-28 02:01:03 +0000"
     },
     "done": true
   },

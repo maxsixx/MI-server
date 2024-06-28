@@ -432,6 +432,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/gold_ingot_from_smelting_raw_gold": {
+    "criteria": {
+      "has_raw_gold": "2024-06-28 01:46:08 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/leather_leggings": {
     "criteria": {
       "has_leather": "2024-06-25 02:59:25 +0000"
@@ -790,6 +796,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/fletching_table": {
+    "criteria": {
+      "has_flint": "2024-06-28 01:48:34 +0000"
+    },
+    "done": true
+  },
   "smallships:recipes/transportation/spruce_brigg": {
     "criteria": {
       "in_water": "2024-06-25 02:42:08 +0000"
@@ -865,6 +877,12 @@
   "vampirism:recipes/vampirism/vampire/blood_infused_enhanced_iron_ingot": {
     "criteria": {
       "has_iron": "2024-06-25 02:45:28 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/blue_dye": {
+    "criteria": {
+      "has_lapis_lazuli": "2024-06-28 01:57:11 +0000"
     },
     "done": true
   },
@@ -1237,6 +1255,12 @@
   "vampirism:recipes/vampirism/vampire/candelabra": {
     "criteria": {
       "has_iron": "2024-06-25 02:45:28 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_gold_block": {
+    "criteria": {
+      "has_raw_gold": "2024-06-28 01:46:08 +0000"
     },
     "done": true
   },
@@ -1703,6 +1727,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/lapis_block": {
+    "criteria": {
+      "has_lapis_lazuli": "2024-06-28 01:57:11 +0000"
+    },
+    "done": true
+  },
   "aquaculture:recipes/aquaculture/double_hook": {
     "criteria": {
       "has_items": "2024-06-25 02:30:44 +0000"
@@ -2102,6 +2132,12 @@
   "securitycraft:recipes/securitycraft/speed_module": {
     "criteria": {
       "has_iron": "2024-06-25 02:45:28 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/flint_and_steel": {
+    "criteria": {
+      "has_flint": "2024-06-28 01:48:34 +0000"
     },
     "done": true
   },
@@ -2559,6 +2595,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/gold_ingot_from_blasting_raw_gold": {
+    "criteria": {
+      "has_raw_gold": "2024-06-28 01:46:08 +0000"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/sonic_security_system": {
     "criteria": {
       "has_stick": "2024-06-25 02:34:44 +0000"
@@ -2844,6 +2886,12 @@
   "minecraft:recipes/decorations/blue_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2024-06-27 02:30:04 +0000"
+    },
+    "done": true
+  },
+  "mca:recipes/misc/rose_gold_dust": {
+    "criteria": {
+      "has_item": "2024-06-28 01:46:08 +0000"
     },
     "done": true
   },

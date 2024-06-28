@@ -654,6 +654,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/birch_sign": {
+    "criteria": {
+      "has_planks": "2024-06-28 02:47:51 +0000"
+    },
+    "done": true
+  },
   "minecraft:adventure/root": {
     "criteria": {
       "killed_something": "2024-06-25 02:40:56 +0000"
@@ -744,6 +750,7 @@
       "minecraft:creeper": "2024-06-27 03:20:13 +0000",
       "minecraft:witch": "2024-06-25 03:47:54 +0000",
       "minecraft:piglin": "2024-06-28 00:24:47 +0000",
+      "minecraft:silverfish": "2024-06-28 02:50:48 +0000",
       "minecraft:zombie": "2024-06-25 03:32:28 +0000"
     },
     "done": false
@@ -1090,6 +1097,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/birch_button": {
+    "criteria": {
+      "has_planks": "2024-06-28 02:47:51 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/red_dye_from_poppy": {
     "criteria": {
       "has_poppy": "2024-06-25 03:35:45 +0000"
@@ -1315,6 +1328,12 @@
   "bossominium:loot_bosses_a": {
     "criteria": {
       "loot_bosses_a": "2024-06-25 02:30:45 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_fence_gate": {
+    "criteria": {
+      "has_planks": "2024-06-28 02:47:51 +0000"
     },
     "done": true
   },
@@ -1985,6 +2004,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/birch_pressure_plate": {
+    "criteria": {
+      "has_planks": "2024-06-28 02:47:51 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/campfire": {
     "criteria": {
       "has_stick": "2024-06-25 02:34:44 +0000"
@@ -2292,6 +2317,12 @@
   "securitycraft:recipes/securitycraft/reinforced_bookshelf": {
     "criteria": {
       "has_book": "2024-06-25 02:43:55 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_slab": {
+    "criteria": {
+      "has_planks": "2024-06-28 02:47:51 +0000"
     },
     "done": true
   },
@@ -2806,6 +2837,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/birch_door": {
+    "criteria": {
+      "has_planks": "2024-06-28 02:47:51 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/birch_chest_boat": {
     "criteria": {
       "has_boat": "2024-06-25 02:54:57 +0000"
@@ -2892,6 +2929,12 @@
   "minecraft:recipes/decorations/blue_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2024-06-27 02:30:04 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/birch_fence": {
+    "criteria": {
+      "has_planks": "2024-06-28 02:47:51 +0000"
     },
     "done": true
   },
@@ -3454,6 +3497,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/birch_stairs": {
+    "criteria": {
+      "has_planks": "2024-06-28 02:47:51 +0000"
+    },
+    "done": true
+  },
   "aquaculture:recipes/aquaculture/iron_hook": {
     "criteria": {
       "has_items": "2024-06-25 02:30:44 +0000"
@@ -3547,6 +3596,12 @@
   "tombstone:adventure/choose_knowledge": {
     "criteria": {
       "coded_trigger": "2024-06-27 03:20:49 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_trapdoor": {
+    "criteria": {
+      "has_planks": "2024-06-28 02:47:51 +0000"
     },
     "done": true
   },

@@ -492,6 +492,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/red_dye_from_rose_bush": {
+    "criteria": {
+      "has_rose_bush": "2024-06-28 00:25:40 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/gold_block": {
     "criteria": {
       "has_gold_ingot": "2024-06-25 03:24:19 +0000"
@@ -731,6 +737,8 @@
       "minecraft:pillager": "2024-06-25 03:47:48 +0000",
       "minecraft:skeleton": "2024-06-25 03:22:48 +0000",
       "minecraft:magma_cube": "2024-06-25 03:24:01 +0000",
+      "minecraft:piglin_brute": "2024-06-28 00:24:14 +0000",
+      "minecraft:piglin": "2024-06-28 00:25:14 +0000",
       "minecraft:stray": "2024-06-25 03:38:30 +0000",
       "minecraft:zombie": "2024-06-27 02:25:33 +0000"
     },
@@ -2158,6 +2166,12 @@
     },
     "done": true
   },
+  "tombstone:adventure/chain_death": {
+    "criteria": {
+      "coded_trigger": "2024-06-28 00:26:49 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/gold_nugget": {
     "criteria": {
       "has_gold_ingot": "2024-06-25 03:24:19 +0000"
@@ -2359,6 +2373,12 @@
   "minecraft:recipes/decorations/mossy_cobblestone_wall": {
     "criteria": {
       "has_mossy_cobblestone": "2024-06-28 00:04:40 +0000"
+    },
+    "done": true
+  },
+  "dungeons_arise:find_mushroom_house": {
+    "criteria": {
+      "location0": "2024-06-28 00:23:31 +0000"
     },
     "done": true
   },

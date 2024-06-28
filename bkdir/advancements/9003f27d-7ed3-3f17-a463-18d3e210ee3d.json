@@ -668,8 +668,10 @@
       "minecraft:skeleton": "2024-06-25 03:23:48 +0000",
       "minecraft:magma_cube": "2024-06-25 03:24:04 +0000",
       "minecraft:spider": "2024-06-25 03:35:03 +0000",
+      "minecraft:piglin_brute": "2024-06-28 00:24:14 +0000",
       "minecraft:creeper": "2024-06-27 03:20:13 +0000",
       "minecraft:witch": "2024-06-25 03:47:54 +0000",
+      "minecraft:piglin": "2024-06-28 00:24:47 +0000",
       "minecraft:zombie": "2024-06-25 03:32:28 +0000"
     },
     "done": false
@@ -2120,6 +2122,12 @@
   "minecraft:recipes/decorations/mossy_cobblestone_wall": {
     "criteria": {
       "has_mossy_cobblestone": "2024-06-25 02:38:29 +0000"
+    },
+    "done": true
+  },
+  "dungeons_arise:find_mushroom_house": {
+    "criteria": {
+      "location0": "2024-06-28 00:23:29 +0000"
     },
     "done": true
   },
